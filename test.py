@@ -33,11 +33,6 @@ class CoffeM(unittest.TestCase):
         with self.assertRaises(NoCoinException):
             machine.get_coffee()
 
-    def test_no_elements(self):
-        machine = CoffeMachine()
-        with self.assertRaises(NoElementsException):
-            machine.get_coffee()
-
     def test_get_coffe(self):
         machine = CoffeMachine()
         machine.insert_coin()
